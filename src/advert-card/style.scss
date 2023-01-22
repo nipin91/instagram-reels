@@ -1,0 +1,48 @@
+.advertisement-card {
+  &.card {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.58);
+    margin-right: 8px;
+    min-width: 320px;
+  }
+  .card-img-top {
+    width: 75px;
+    height: 75px;
+  }
+  .card-body {
+    padding: 5px 10px;
+    max-height: 75px;
+    .card-title {
+      font-size: 12px;
+      line-height: 18px;
+      text-align: left;
+      margin-bottom: 2px;
+      color: #fff;
+    }
+    .weight {
+      font-size: 10px;
+      line-height: 15px;
+      text-align: left;
+      margin-bottom: 5px;
+      color: #fff;
+    }
+    .price-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .price,
+      .discounted-price {
+        font-size: 12px;
+        line-height: 13px;
+      }
+      .discounted-price {
+        margin-right: 10px;
+        color: #fff;
+      }
+      .price {
+        color: #befd4f;
+      }
+    }
+  }
+}

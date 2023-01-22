@@ -1,0 +1,125 @@
+.feed-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  .progress-bar-container {
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    right: 16px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .remaining-time {
+      color: #fff;
+      font-size: 10px;
+      line-height: 15px;
+    }
+    .progress {
+      height: 2px;
+      flex: 1;
+      margin-right: 8px;
+
+      .progress-bar {
+        background: #befd4f;
+      }
+    }
+  }
+  .feed-header {
+    position: absolute;
+    top: 30px;
+    padding: 0 16px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    .name-follow-container {
+      display: flex;
+      align-items: center;
+      .image {
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        border-radius: 100px;
+        overflow: hidden;
+      }
+      .name {
+        font-size: 12px;
+        line-height: 18px;
+        color: #fff;
+        margin-right: 8px;
+      }
+      .btn-follow {
+        padding: 8px 16px;
+        background: #2c3033;
+        border-radius: 32px;
+        outline: 0;
+        border: 0;
+      }
+    }
+    .more-icon {
+      margin-right: 24px;
+    }
+    .description {
+      font-size: 12px;
+      line-height: 18px;
+      color: #fff;
+      margin-top: 8px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+
+  .reel-action-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 165px;
+    right: 16px;
+    height: 160px;
+    z-index: 10;
+
+    .icon-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      margin-bottom: 15px;
+      .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 8px;
+        background: linear-gradient(
+          90.82deg,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(0, 0, 0, 0.2) 99.85%
+        );
+        border-radius: 8px;
+      }
+      span {
+        color: #fff;
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .advertisement-list-container {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}
